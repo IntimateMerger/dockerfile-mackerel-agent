@@ -1,0 +1,6 @@
+[mackerel]
+name=mackerel-agent
+baseurl=http://yum.mackerel.io/amznlinux/latest/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://mackerel.io/assets/files/GPG-KEY-mackerel

@@ -8,7 +8,20 @@ If you don't set the env, mackerel-agent use the default env.
 
 | name | default | description |
 | --- | --- | --- |
+| TZ | Asia/Tokyo |  |
 | APIKEY |  | ※required |
 | ROLE |  |  |
 | OPTS |  |  |
 | AUTO_RETIREMENT | 1 |  |
+
+
+### Example
+
+```bash
+docker run -d --name mackerel-agent \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v /var/lib/mackerel-agent/:/var/lib/mackerel-agent/ \
+  -e 'APIKEY=<APIKEY>' \
+  -e 'OPTS=-v' \
+  intimatemerger/mackerel-agent
+```
