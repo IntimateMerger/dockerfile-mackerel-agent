@@ -4,11 +4,11 @@
 
 ### Environment
 
-If you don't set the env, Rundeck use the default env.
+If you don't set the env, mackerel-agent use the default env.
 
 | name | default | description |
 | --- | --- | --- |
-| APIKEY |  |  |
+| APIKEY |  | ※required |
 | ROLE |  |  |
 | OPTS |  |  |
 | AUTO_RETIREMENT | 1 |  |
