@@ -10,8 +10,7 @@ If you don't set the env, mackerel-agent use the default env.
 | --- | --- | --- |
 | TZ | Asia/Tokyo |  |
 | APIKEY |  | ※required |
-| ROLE |  |  |
-| OPTS |  |  |
+| OPTS |  | ex) -role=develop:test |
 | AUTO_RETIREMENT | 1 |  |
 
 

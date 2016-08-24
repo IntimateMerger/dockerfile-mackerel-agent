@@ -11,7 +11,7 @@ RUN yum -y install mackerel-agent-$AGENT_VERSION \
                    docker-engine-$DOCKER_VERSION && \
     yum clean all
 
-COPY mackerel-agent.conf /etc/mackerel-agent/mackerel-agent.conf
+COPY mackerel-agent/ /etc/mackerel-agent/
 COPY startup.sh /startup.sh
 
 ENV TZ=Asia/Tokyo \
