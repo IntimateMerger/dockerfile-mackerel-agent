@@ -21,7 +21,7 @@ if [ -n "$PLUGINS" ]; then
     ARRAY=($PLUGINS)
     for PLUGIN in ${ARRAY[@]}
     do
-        echo "include = \"/etc/mackerel-agent/conf.d/$PLUGIN.conf\"" >> /etc/mackerel-agent/mackerel-agent.conf
+        ln -s /etc/mackerel-agent/plugins/$PLUGIN.conf /etc/mackerel-agent/enabled/$PLUGIN.conf
     done
 fi
 

@@ -4,7 +4,7 @@ ENV AGENT_VERSION=0.34.0 \
     PLUGINS_VERSION=0.22.0 \
     DOCKER_VERSION=1.12.1
 
-COPY yum.repos.d/ /etc/yum.repos.d/
+COPY repos/ /etc/yum.repos.d/
 
 RUN yum -y install mackerel-agent-$AGENT_VERSION \
                    mackerel-agent-plugins-$PLUGINS_VERSION \
