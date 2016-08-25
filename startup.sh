@@ -13,7 +13,7 @@ if [ -n "$APIKEY" ]; then
 fi
 
 if [ "$AUTO_RETIREMENT" != "" ] && [ "$AUTO_RETIREMENT" != "0" ]; then
-    trap '/usr/bin/mackerel-agent retire -force' TERM KILL
+    trap '/usr/bin/mackerel-agent retire -force;rm -f /var/lib/mackerel-agent/id' TERM KILL
 fi
 
 if [ -n "$PLUGINS" ]; then
